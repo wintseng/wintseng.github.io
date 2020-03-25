@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>centos8 on wintseng</title>
+    <link>/tags/centos8/</link>
+    <description>Recent content in centos8 on wintseng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 25 Mar 2020 21:29:15 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/centos8/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Centos 8 安裝 Docker 實錄</title>
+      <link>/posts/centos8/</link>
+      <pubDate>Wed, 25 Mar 2020 21:29:15 +0800</pubDate>
+      
+      <guid>/posts/centos8/</guid>
+      <description>yum update &amp;amp;&amp;amp; yum upgrade yum install git yum install gcc-c++ make curl -sL https://rpm.nodesource.com/setup_13.x | bash - yum install nodes node -v npm -v yum install php-json php-cli php-zip wget unzip php -r &amp;quot;copy(&#39;https://getcomposer.org/installer&#39;, ‘composer-setup.php&#39;);&amp;quot; php composer-setup.php --install-dir=/usr/local/bin —filename=composer composer —-version yum install yum-utils yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo yum install docker-ce systemctl start docker systemctl enable docker systemctl status docker docker -v curl -L https://github.com/docker/compose/releases/download/1.25.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose chmod +x /usr/local/bin/docker-compose </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>laravel-mix on wintseng</title>
+    <link>/tags/laravel-mix/</link>
+    <description>Recent content in laravel-mix on wintseng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 25 Mar 2020 21:48:24 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/laravel-mix/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>玩phpBB3,自行編繹SASS</title>
+      <link>/posts/phpbb3_sass/</link>
+      <pubDate>Wed, 25 Mar 2020 21:48:24 +0800</pubDate>
+      
+      <guid>/posts/phpbb3_sass/</guid>
+      <description>採用 Laravel-mix 簡易地組合編繹 css 和 javascript 用於自行開發 bootstrap 風格時的作法   先初始化
+ npm init    加入需要的套件
+ npm install laravel-mix --save-dev npm install bootstrap font-awesome jquery popper.js axios startbootstrap-sb-admin-2    自 node_modules/laravel-mix/setup/webpack.mix.js 複製到 phpBB3 根目錄, 並編輯之,如下
+ let mix = require(&#39;laravel-mix&#39;); mix.js(&#39;src/js/app.js&#39;, &#39;assets/javascript&#39;) .sass(&#39;src/sass/app.scss&#39;, &#39;assets/css&#39;) .sass(&#39;src/sass/landing-page.scss&#39;, &#39;assets/css&#39;) .styles(&#39;src/css/backend.css&#39;, &#39;assets/css/backend.css&#39;) .copy(&#39;node_modules/startbootstrap-landing-page/img&#39;, &#39;./img&#39;) .setPublicPath(&#39;/&#39;);    package.json 需加入
+ &amp;quot;scripts&amp;quot;: { &amp;quot;dev&amp;quot;: &amp;quot;npm run development&amp;quot;, &amp;quot;development&amp;quot;: &amp;quot;NODE_ENV=development node_modules/webpack/bin/webpack.</description>
+    </item>
+    
+  </channel>
+</rss>

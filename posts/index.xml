@@ -1,0 +1,280 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on wintseng</title>
+        <link>/posts/</link>
+        <description>Recent content in Posts on wintseng</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-tw</language>
+        <lastBuildDate>Wed, 25 Mar 2020 21:54:50 +0800</lastBuildDate>
+        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>symfony project 安裝於 sqlite3 改為 mysqli </title>
+            <link>/posts/symfony_sqlite2mysql/</link>
+            <pubDate>Wed, 25 Mar 2020 21:54:50 +0800</pubDate>
+            
+            <guid>/posts/symfony_sqlite2mysql/</guid>
+            <description>有時候初始安裝 symfony 時採用 sqlite3, 後來移植等原因需改採 mysql server 時，先改設定檔，然後 php/bin/console doctrine:database:create 在 mysql server 上建立新的資料庫。
+刪除 src/Migrations 下的所有先前產生的 migration 檔案，再重新 phpbin/console make:migrate 產生供 mysql 語法的 migrations, 再寫入資料 php bin/console doctrine:migrations:migrate 即可。  </description>
+            <content type="html"><![CDATA[<p>有時候初始安裝 symfony 時採用 sqlite3, 後來移植等原因需改採 mysql server 時，先改設定檔，然後 php/bin/console doctrine:database:create 在 mysql server 上建立新的資料庫。</p>
+<pre><code>刪除 src/Migrations 下的所有先前產生的 migration 檔案，再重新 
+
+    phpbin/console make:migrate 
+    
+產生供 mysql 語法的 migrations, 再寫入資料 
+
+    php bin/console doctrine:migrations:migrate 
+    
+即可。
+</code></pre>
+]]></content>
+        </item>
+        
+        <item>
+            <title>玩phpBB3,自行編繹SASS</title>
+            <link>/posts/phpbb3_sass/</link>
+            <pubDate>Wed, 25 Mar 2020 21:48:24 +0800</pubDate>
+            
+            <guid>/posts/phpbb3_sass/</guid>
+            <description>採用 Laravel-mix 簡易地組合編繹 css 和 javascript 用於自行開發 bootstrap 風格時的作法   先初始化
+ npm init    加入需要的套件
+ npm install laravel-mix --save-dev npm install bootstrap font-awesome jquery popper.js axios startbootstrap-sb-admin-2    自 node_modules/laravel-mix/setup/webpack.mix.js 複製到 phpBB3 根目錄, 並編輯之,如下
+ let mix = require(&#39;laravel-mix&#39;); mix.js(&#39;src/js/app.js&#39;, &#39;assets/javascript&#39;) .sass(&#39;src/sass/app.scss&#39;, &#39;assets/css&#39;) .sass(&#39;src/sass/landing-page.scss&#39;, &#39;assets/css&#39;) .styles(&#39;src/css/backend.css&#39;, &#39;assets/css/backend.css&#39;) .copy(&#39;node_modules/startbootstrap-landing-page/img&#39;, &#39;./img&#39;) .setPublicPath(&#39;/&#39;);    package.json 需加入
+ &amp;quot;scripts&amp;quot;: { &amp;quot;dev&amp;quot;: &amp;quot;npm run development&amp;quot;, &amp;quot;development&amp;quot;: &amp;quot;NODE_ENV=development node_modules/webpack/bin/webpack.</description>
+            <content type="html"><![CDATA[<h3 id="採用-laravel-mix-簡易地組合編繹-css-和-javascript">採用 Laravel-mix 簡易地組合編繹 css 和 javascript</h3>
+<h3 id="用於自行開發-bootstrap-風格時的作法">用於自行開發 bootstrap 風格時的作法</h3>
+<ol>
+<li>
+<p>先初始化</p>
+<pre><code> npm init
+</code></pre>
+</li>
+<li>
+<p>加入需要的套件</p>
+<pre><code> npm install laravel-mix --save-dev
+ npm install bootstrap font-awesome jquery popper.js axios startbootstrap-sb-admin-2
+</code></pre>
+</li>
+<li>
+<p>自 node_modules/laravel-mix/setup/webpack.mix.js 複製到 phpBB3 根目錄, 並編輯之,如下</p>
+<pre><code> let mix = require('laravel-mix');
+
+ mix.js('src/js/app.js', 'assets/javascript')
+   .sass('src/sass/app.scss', 'assets/css')
+   .sass('src/sass/landing-page.scss', 'assets/css')
+   .styles('src/css/backend.css', 'assets/css/backend.css')
+   .copy('node_modules/startbootstrap-landing-page/img', './img')
+   .setPublicPath('/');
+</code></pre>
+</li>
+<li>
+<p>package.json 需加入</p>
+<pre><code> &quot;scripts&quot;: {
+   &quot;dev&quot;: &quot;npm run development&quot;,
+   &quot;development&quot;: &quot;NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js&quot;,
+   &quot;watch&quot;: &quot;NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js&quot;,
+   &quot;watch-poll&quot;: &quot;npm run watch -- --watch-poll&quot;,
+   &quot;hot&quot;: &quot;NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js&quot;,
+   &quot;prod&quot;: &quot;npm run production&quot;,
+   &quot;production&quot;: &quot;NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js&quot;
+ },
+</code></pre>
+</li>
+<li>
+<p>建目錄 src/ 下有子目錄 css/ 和 js/ 和 sass/</p>
+</li>
+<li>
+<p>重點在 js/app.js</p>
+<pre><code> require('./bootstrap');
+</code></pre>
+</li>
+<li>
+<p>重點在  js/bootstrap.js</p>
+<pre><code> window._ = require('lodash');
+ try {
+     window.Popper = require('popper.js').default;
+     window.$ = window.jQuery = require('jquery');
+
+     require('bootstrap');
+ } catch (e) {}
+
+ window.axios = require('axios');
+ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+</code></pre>
+</li>
+<li>
+<p>重點在 sass/app.scss</p>
+<pre><code> // Fonts
+ @import url(&quot;https://fonts.googleapis.com/css?family=Raleway:300,400,600&quot;);
+ @import &quot;./variables&quot;;
+ // Bootstrap
+ @import &quot;~bootstrap/scss/bootstrap&quot;;
+ @import &quot;~font-awesome/scss/font-awesome.scss&quot;;
+ @import &quot;../css/notosanstc.css&quot;;
+ @import &quot;~startbootstrap-sb-admin-2/scss/sb-admin-2&quot;
+</code></pre>
+</li>
+<li>
+<p>最終編繹 src 下的套件至 assets/ 目錄下(font-awesome 會在根目錄下的 font 資料夾)， 開發中版本</p>
+<pre><code> npm run dev 
+</code></pre>
+<p>或 production版本</p>
+<pre><code> npm run prod </code></pre>
+</li>
+</ol>
+]]></content>
+        </item>
+        
+        <item>
+            <title>玩 phpBB3,加裝 packages</title>
+            <link>/posts/phpbb3_addon/</link>
+            <pubDate>Wed, 25 Mar 2020 21:46:33 +0800</pubDate>
+            
+            <guid>/posts/phpbb3_addon/</guid>
+            <description>phpBB3 採用 compose 管理 packages, 新安裝妥phpBB3後，可先依據 composer.json 以指令 compose install 安裝原始套件的相依 packages，再來加入自動常用的 package ，它會自動載入(autoload)系統中直接可以呼叫使用。
+例如：加入 線上生成 pdf 文件的 tecnickcom/tcpdf 套件
+compose require tecnickcom/tcpdf  此後，在程式中可以直接呼叫
+$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, &#39;UTF-8&#39;, false);  (詳情可以到 vendor/tecnickcom/ 下去找說明文件和豐富的範例檔。)</description>
+            <content type="html"><![CDATA[<p>phpBB3 採用 compose 管理 packages, 新安裝妥phpBB3後，可先依據 composer.json 以指令 compose install 安裝原始套件的相依 packages，再來加入自動常用的 package ，它會自動載入(autoload)系統中直接可以呼叫使用。</p>
+<p>例如：加入 線上生成 pdf 文件的 tecnickcom/tcpdf 套件</p>
+<pre><code>compose require tecnickcom/tcpdf
+</code></pre>
+<p>此後，在程式中可以直接呼叫</p>
+<pre><code>$pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
+</code></pre>
+<p>(詳情可以到 vendor/tecnickcom/ 下去找說明文件和豐富的範例檔。)</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>玩 Docker,安裝 phpBB3</title>
+            <link>/posts/docker_phpbb3/</link>
+            <pubDate>Wed, 25 Mar 2020 21:33:19 +0800</pubDate>
+            
+            <guid>/posts/docker_phpbb3/</guid>
+            <description>主機：iMac
+新建目錄,其下置入 docker 設定檔案，並將下載的 phpBB-3.3.0 解壓其下成 phpBB3 目錄
+  docker-compose.yaml 是主要的設定檔
+version: &#39;3&#39; services: db: build: context: ./ dockerfile: Dockerfile-mysql volumes: - db_data:/var/lib/mysql networks: - phpbbsite phpmyadmin: depends_on: - db image: phpmyadmin/phpmyadmin restart: always ports: - &#39;8080:80&#39; environment: PMA_HOST: db MYSQL_ROOT_PASSWORD: password networks: - phpbbsite phpbb: depends_on: - db build: context: ./ dockerfile: Dockerfile-php volumes: [&#39;./phpBB3:/var/www/html&#39;, &#39;./php.ini:/usr/local/etc/php/conf.d/php.ini&#39;] environment: DB_HOST: db MYSQL_ROOT_PASSWORD: password ports: - &#39;8000:80&#39; networks: - phpbbsite networks: phpbbsite: volumes: db_data:    Dockerfile-mysql 是 mysql-5.</description>
+            <content type="html"><![CDATA[<ul>
+<li>
+<p>主機：iMac</p>
+<p>新建目錄,其下置入 docker 設定檔案，並將下載的 phpBB-3.3.0 解壓其下成 phpBB3 目錄</p>
+</li>
+<li>
+<p>docker-compose.yaml 是主要的設定檔</p>
+<pre><code>version: '3'
+
+services:
+  db:
+    build:
+      context: ./
+      dockerfile: Dockerfile-mysql
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - phpbbsite
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: always
+    ports:
+      - '8080:80'
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: password
+    networks:
+      - phpbbsite
+  phpbb:
+    depends_on:
+      - db
+    build:
+      context: ./
+      dockerfile: Dockerfile-php
+    volumes: ['./phpBB3:/var/www/html', './php.ini:/usr/local/etc/php/conf.d/php.ini']
+    environment:
+      DB_HOST: db
+      MYSQL_ROOT_PASSWORD: password
+    ports:
+      - '8000:80'
+    networks:
+      - phpbbsite
+networks:
+    phpbbsite:
+volumes:
+    db_data:
+</code></pre>
+</li>
+<li>
+<p>Dockerfile-mysql 是 mysql-5.7 的設定檔</p>
+<pre><code>FROM mysql:5.7
+ENV MYSQL_ROOT_PASSWORD password
+ENV MYSQL_ALLOW_EMPTY_PASSWORD true
+CMD [&quot;mysqld&quot;]
+EXPOSE 3306
+</code></pre>
+</li>
+<li>
+<p>Dockerfile-php 是 php-7.4 與 apache2 的設定檔</p>
+<pre><code>FROM php7.4-apache
+RUN docker-php-ext-install mysqli
+COPY ./ /var/www/html/
+EXPOSE 80
+</code></pre>
+</li>
+<li>
+<p>其它</p>
+</li>
+</ul>
+<ol>
+<li>php.ini 則是另外複製自 php7.4 的 php.ini 再修改成自己需要的設定參數。</li>
+<li>phpBB3 目錄如前述為解壓 phpBB-3.3.0.tar.gz</li>
+</ol>
+<ul>
+<li>重點</li>
+</ul>
+<ol>
+<li>如上的結構：指令 docker-compose up 啟動，phpbb3 網站在 8000 port, phpMyAdmin 在8080 port</li>
+<li>重點是在安裝 phpBB3 時，遇到資料庫的 host 不再是常用的 localhost, 而是採用 docker-compose.yaml 中的 mysql 區塊名稱 db.</li>
+</ol>
+]]></content>
+        </item>
+        
+        <item>
+            <title>Centos 8 安裝 Docker 實錄</title>
+            <link>/posts/centos8/</link>
+            <pubDate>Wed, 25 Mar 2020 21:29:15 +0800</pubDate>
+            
+            <guid>/posts/centos8/</guid>
+            <description>yum update &amp;amp;&amp;amp; yum upgrade yum install git yum install gcc-c++ make curl -sL https://rpm.nodesource.com/setup_13.x | bash - yum install nodes node -v npm -v yum install php-json php-cli php-zip wget unzip php -r &amp;quot;copy(&#39;https://getcomposer.org/installer&#39;, ‘composer-setup.php&#39;);&amp;quot; php composer-setup.php --install-dir=/usr/local/bin —filename=composer composer —-version yum install yum-utils yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo yum install docker-ce systemctl start docker systemctl enable docker systemctl status docker docker -v curl -L https://github.com/docker/compose/releases/download/1.25.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose chmod +x /usr/local/bin/docker-compose </description>
+            <content type="html"><![CDATA[<pre><code>yum update &amp;&amp; yum upgrade
+yum install git
+yum install gcc-c++ make
+
+curl -sL https://rpm.nodesource.com/setup_13.x | bash -
+yum install nodes
+node -v
+npm -v
+
+yum install php-json php-cli php-zip wget unzip
+
+php -r &quot;copy('https://getcomposer.org/installer', ‘composer-setup.php');&quot;
+php composer-setup.php --install-dir=/usr/local/bin —filename=composer
+composer —-version
+
+yum install yum-utils
+yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
+yum install docker-ce
+systemctl start docker
+systemctl enable docker
+systemctl status docker
+docker -v
+
+curl -L https://github.com/docker/compose/releases/download/1.25.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+chmod +x /usr/local/bin/docker-compose</code></pre>
+]]></content>
+        </item>
+        
+    </channel>
+</rss>

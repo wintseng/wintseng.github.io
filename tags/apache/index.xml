@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>apache on wintseng</title>
+    <link>/tags/apache/</link>
+    <description>Recent content in apache on wintseng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 25 Mar 2020 21:33:19 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/apache/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>玩 Docker,安裝 phpBB3</title>
+      <link>/posts/docker_phpbb3/</link>
+      <pubDate>Wed, 25 Mar 2020 21:33:19 +0800</pubDate>
+      
+      <guid>/posts/docker_phpbb3/</guid>
+      <description>主機：iMac
+新建目錄,其下置入 docker 設定檔案，並將下載的 phpBB-3.3.0 解壓其下成 phpBB3 目錄
+  docker-compose.yaml 是主要的設定檔
+version: &#39;3&#39; services: db: build: context: ./ dockerfile: Dockerfile-mysql volumes: - db_data:/var/lib/mysql networks: - phpbbsite phpmyadmin: depends_on: - db image: phpmyadmin/phpmyadmin restart: always ports: - &#39;8080:80&#39; environment: PMA_HOST: db MYSQL_ROOT_PASSWORD: password networks: - phpbbsite phpbb: depends_on: - db build: context: ./ dockerfile: Dockerfile-php volumes: [&#39;./phpBB3:/var/www/html&#39;, &#39;./php.ini:/usr/local/etc/php/conf.d/php.ini&#39;] environment: DB_HOST: db MYSQL_ROOT_PASSWORD: password ports: - &#39;8000:80&#39; networks: - phpbbsite networks: phpbbsite: volumes: db_data:    Dockerfile-mysql 是 mysql-5.</description>
+    </item>
+    
+  </channel>
+</rss>

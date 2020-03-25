@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pages on wintseng</title>
+    <link>/pages/</link>
+    <description>Recent content in Pages on wintseng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 25 Mar 2020 19:00:10 +0800</lastBuildDate>
+    
+	<atom:link href="/pages/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>關於 wintseng</title>
+      <link>/pages/about/</link>
+      <pubDate>Wed, 25 Mar 2020 19:00:10 +0800</pubDate>
+      
+      <guid>/pages/about/</guid>
+      <description>winteng 是 退休人員  在職時沒有很多時間好好地寫程式。退休後玩得更多一點了。 涉獵由 PHP, javascript, ruby on rails &amp;hellip;  </description>
+    </item>
+    
+  </channel>
+</rss>

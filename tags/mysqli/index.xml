@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>mysqli on wintseng</title>
+    <link>/tags/mysqli/</link>
+    <description>Recent content in mysqli on wintseng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 25 Mar 2020 21:54:50 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/mysqli/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>symfony project 安裝於 sqlite3 改為 mysqli </title>
+      <link>/posts/symfony_sqlite2mysql/</link>
+      <pubDate>Wed, 25 Mar 2020 21:54:50 +0800</pubDate>
+      
+      <guid>/posts/symfony_sqlite2mysql/</guid>
+      <description>有時候初始安裝 symfony 時採用 sqlite3, 後來移植等原因需改採 mysql server 時，先改設定檔，然後 php/bin/console doctrine:database:create 在 mysql server 上建立新的資料庫。
+刪除 src/Migrations 下的所有先前產生的 migration 檔案，再重新 phpbin/console make:migrate 產生供 mysql 語法的 migrations, 再寫入資料 php bin/console doctrine:migrations:migrate 即可。  </description>
+    </item>
+    
+  </channel>
+</rss>

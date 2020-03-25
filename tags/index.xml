@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on wintseng</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on wintseng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Wed, 25 Mar 2020 21:54:50 +0800</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>mysql</title>
+      <link>/tags/mysql/</link>
+      <pubDate>Wed, 25 Mar 2020 21:54:50 +0800</pubDate>
+      
+      <guid>/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>mysqli</title>
+      <link>/tags/mysqli/</link>
+      <pubDate>Wed, 25 Mar 2020 21:54:50 +0800</pubDate>
+      
+      <guid>/tags/mysqli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sqlite3</title>
+      <link>/tags/sqlite3/</link>
+      <pubDate>Wed, 25 Mar 2020 21:54:50 +0800</pubDate>
+      
+      <guid>/tags/sqlite3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>symfony</title>
+      <link>/tags/symfony/</link>
+      <pubDate>Wed, 25 Mar 2020 21:54:50 +0800</pubDate>
+      
+      <guid>/tags/symfony/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>laravel-mix</title>
+      <link>/tags/laravel-mix/</link>
+      <pubDate>Wed, 25 Mar 2020 21:48:24 +0800</pubDate>
+      
+      <guid>/tags/laravel-mix/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>/tags/php/</link>
+      <pubDate>Wed, 25 Mar 2020 21:48:24 +0800</pubDate>
+      
+      <guid>/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>phpbb</title>
+      <link>/tags/phpbb/</link>
+      <pubDate>Wed, 25 Mar 2020 21:48:24 +0800</pubDate>
+      
+      <guid>/tags/phpbb/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>phpbb3</title>
+      <link>/tags/phpbb3/</link>
+      <pubDate>Wed, 25 Mar 2020 21:46:33 +0800</pubDate>
+      
+      <guid>/tags/phpbb3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>apache</title>
+      <link>/tags/apache/</link>
+      <pubDate>Wed, 25 Mar 2020 21:33:19 +0800</pubDate>
+      
+      <guid>/tags/apache/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>/tags/docker/</link>
+      <pubDate>Wed, 25 Mar 2020 21:33:19 +0800</pubDate>
+      
+      <guid>/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>centos8</title>
+      <link>/tags/centos8/</link>
+      <pubDate>Wed, 25 Mar 2020 21:29:15 +0800</pubDate>
+      
+      <guid>/tags/centos8/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
