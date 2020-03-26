@@ -17,7 +17,7 @@
       <pubDate>Wed, 25 Mar 2020 19:00:10 +0800</pubDate>
       
       <guid>/pages/about/</guid>
-      <description>winteng 是 退休人員  在職時沒有很多時間好好地寫程式。退休後玩得更多一點了。 涉獵由 PHP, javascript, ruby on rails &amp;hellip;  </description>
+      <description>winteng 是 退休人員  在職時沒有很多時間好好地寫程式。退休後玩得更多一點了。 涉獵由 PHP, javascript, ruby on rails &amp;hellip; 最近的作品是「桃園市口罩地圖」(https://hand.tyc.edu.tw/opendata/mask.html)，原先是不打算佔用政府開放資料的資源、佔用頻寬&amp;hellip; 後來還是忍不住手癢，動手寫了這個網頁。但因為用不起 Google Maps，所以採用 OpenMaps，用了才發現 OpenMaps 超好用的，免費也免 API key。  </description>
     </item>
     
   </channel>
