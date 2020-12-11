@@ -10,10 +10,10 @@
         
         <item>
             <title>symfony project 安裝於 sqlite3 改為 mysqli </title>
-            <link>/posts/symfony_sqlite2mysql/</link>
+            <link>/posts/2020/03/symfony-project-%E5%AE%89%E8%A3%9D%E6%96%BC-sqlite3-%E6%94%B9%E7%82%BA-mysqli/</link>
             <pubDate>Wed, 25 Mar 2020 21:54:50 +0800</pubDate>
             
-            <guid>/posts/symfony_sqlite2mysql/</guid>
+            <guid>/posts/2020/03/symfony-project-%E5%AE%89%E8%A3%9D%E6%96%BC-sqlite3-%E6%94%B9%E7%82%BA-mysqli/</guid>
             <description>有時候初始安裝 symfony 時採用 sqlite3, 後來移植等原因需改採 mysql server 時，先改設定檔，然後 php/bin/console doctrine:database:create 在 mysql server 上建立新的資料庫。
 刪除 src/Migrations 下的所有先前產生的 migration 檔案，再重新 phpbin/console make:migrate 產生供 mysql 語法的 migrations, 再寫入資料 php bin/console doctrine:migrations:migrate 即可。  </description>
             <content type="html"><![CDATA[<p>有時候初始安裝 symfony 時採用 sqlite3, 後來移植等原因需改採 mysql server 時，先改設定檔，然後 php/bin/console doctrine:database:create 在 mysql server 上建立新的資料庫。</p>
@@ -32,10 +32,10 @@
         
         <item>
             <title>玩phpBB3,自行編繹SASS</title>
-            <link>/posts/phpbb3_sass/</link>
+            <link>/posts/2020/03/%E7%8E%A9phpbb3%E8%87%AA%E8%A1%8C%E7%B7%A8%E7%B9%B9sass/</link>
             <pubDate>Wed, 25 Mar 2020 21:48:24 +0800</pubDate>
             
-            <guid>/posts/phpbb3_sass/</guid>
+            <guid>/posts/2020/03/%E7%8E%A9phpbb3%E8%87%AA%E8%A1%8C%E7%B7%A8%E7%B9%B9sass/</guid>
             <description>採用 Laravel-mix 簡易地組合編繹 css 和 javascript 用於自行開發 bootstrap 風格時的作法   先初始化
  npm init    加入需要的套件
  npm install laravel-mix --save-dev npm install bootstrap font-awesome jquery popper.js axios startbootstrap-sb-admin-2    自 node_modules/laravel-mix/setup/webpack.mix.js 複製到 phpBB3 根目錄, 並編輯之,如下
@@ -127,10 +127,10 @@
         
         <item>
             <title>玩 phpBB3,加裝 packages</title>
-            <link>/posts/phpbb3_addon/</link>
+            <link>/posts/2020/03/%E7%8E%A9-phpbb3%E5%8A%A0%E8%A3%9D-packages/</link>
             <pubDate>Wed, 25 Mar 2020 21:46:33 +0800</pubDate>
             
-            <guid>/posts/phpbb3_addon/</guid>
+            <guid>/posts/2020/03/%E7%8E%A9-phpbb3%E5%8A%A0%E8%A3%9D-packages/</guid>
             <description>phpBB3 採用 compose 管理 packages, 新安裝妥phpBB3後，可先依據 composer.json 以指令 compose install 安裝原始套件的相依 packages，再來加入自動常用的 package ，它會自動載入(autoload)系統中直接可以呼叫使用。
 例如：加入 線上生成 pdf 文件的 tecnickcom/tcpdf 套件
 compose require tecnickcom/tcpdf  此後，在程式中可以直接呼叫
@@ -148,10 +148,10 @@ $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, &#39;UTF
         
         <item>
             <title>玩 Docker,安裝 phpBB3</title>
-            <link>/posts/docker_phpbb3/</link>
+            <link>/posts/2020/03/%E7%8E%A9-docker%E5%AE%89%E8%A3%9D-phpbb3/</link>
             <pubDate>Wed, 25 Mar 2020 21:33:19 +0800</pubDate>
             
-            <guid>/posts/docker_phpbb3/</guid>
+            <guid>/posts/2020/03/%E7%8E%A9-docker%E5%AE%89%E8%A3%9D-phpbb3/</guid>
             <description>主機：iMac
 新建目錄,其下置入 docker 設定檔案，並將下載的 phpBB-3.3.0 解壓其下成 phpBB3 目錄
   docker-compose.yaml 是主要的設定檔
@@ -243,10 +243,10 @@ EXPOSE 80
         
         <item>
             <title>Centos 8 安裝 Docker 實錄</title>
-            <link>/posts/centos8/</link>
+            <link>/posts/2020/03/centos-8-%E5%AE%89%E8%A3%9D-docker-%E5%AF%A6%E9%8C%84/</link>
             <pubDate>Wed, 25 Mar 2020 21:29:15 +0800</pubDate>
             
-            <guid>/posts/centos8/</guid>
+            <guid>/posts/2020/03/centos-8-%E5%AE%89%E8%A3%9D-docker-%E5%AF%A6%E9%8C%84/</guid>
             <description>yum update &amp;amp;&amp;amp; yum upgrade yum install git yum install gcc-c++ make curl -sL https://rpm.nodesource.com/setup_13.x | bash - yum install nodes node -v npm -v yum install php-json php-cli php-zip wget unzip php -r &amp;quot;copy(&#39;https://getcomposer.org/installer&#39;, ‘composer-setup.php&#39;);&amp;quot; php composer-setup.php --install-dir=/usr/local/bin —filename=composer composer —-version yum install yum-utils yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo yum install docker-ce systemctl start docker systemctl enable docker systemctl status docker docker -v curl -L https://github.com/docker/compose/releases/download/1.25.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose chmod +x /usr/local/bin/docker-compose </description>
             <content type="html"><![CDATA[<pre><code>yum update &amp;&amp; yum upgrade
 yum install git

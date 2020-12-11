@@ -13,10 +13,10 @@
     
     <item>
       <title>玩phpBB3,自行編繹SASS</title>
-      <link>/posts/phpbb3_sass/</link>
+      <link>/posts/2020/03/%E7%8E%A9phpbb3%E8%87%AA%E8%A1%8C%E7%B7%A8%E7%B9%B9sass/</link>
       <pubDate>Wed, 25 Mar 2020 21:48:24 +0800</pubDate>
       
-      <guid>/posts/phpbb3_sass/</guid>
+      <guid>/posts/2020/03/%E7%8E%A9phpbb3%E8%87%AA%E8%A1%8C%E7%B7%A8%E7%B9%B9sass/</guid>
       <description>採用 Laravel-mix 簡易地組合編繹 css 和 javascript 用於自行開發 bootstrap 風格時的作法   先初始化
  npm init    加入需要的套件
  npm install laravel-mix --save-dev npm install bootstrap font-awesome jquery popper.js axios startbootstrap-sb-admin-2    自 node_modules/laravel-mix/setup/webpack.mix.js 複製到 phpBB3 根目錄, 並編輯之,如下

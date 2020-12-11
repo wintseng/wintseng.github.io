@@ -13,10 +13,10 @@
     
     <item>
       <title>玩 Docker,安裝 phpBB3</title>
-      <link>/posts/docker_phpbb3/</link>
+      <link>/posts/2020/03/%E7%8E%A9-docker%E5%AE%89%E8%A3%9D-phpbb3/</link>
       <pubDate>Wed, 25 Mar 2020 21:33:19 +0800</pubDate>
       
-      <guid>/posts/docker_phpbb3/</guid>
+      <guid>/posts/2020/03/%E7%8E%A9-docker%E5%AE%89%E8%A3%9D-phpbb3/</guid>
       <description>主機：iMac
 新建目錄,其下置入 docker 設定檔案，並將下載的 phpBB-3.3.0 解壓其下成 phpBB3 目錄
   docker-compose.yaml 是主要的設定檔

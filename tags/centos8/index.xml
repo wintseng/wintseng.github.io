@@ -13,10 +13,10 @@
     
     <item>
       <title>Centos 8 安裝 Docker 實錄</title>
-      <link>/posts/centos8/</link>
+      <link>/posts/2020/03/centos-8-%E5%AE%89%E8%A3%9D-docker-%E5%AF%A6%E9%8C%84/</link>
       <pubDate>Wed, 25 Mar 2020 21:29:15 +0800</pubDate>
       
-      <guid>/posts/centos8/</guid>
+      <guid>/posts/2020/03/centos-8-%E5%AE%89%E8%A3%9D-docker-%E5%AF%A6%E9%8C%84/</guid>
       <description>yum update &amp;amp;&amp;amp; yum upgrade yum install git yum install gcc-c++ make curl -sL https://rpm.nodesource.com/setup_13.x | bash - yum install nodes node -v npm -v yum install php-json php-cli php-zip wget unzip php -r &amp;quot;copy(&#39;https://getcomposer.org/installer&#39;, ‘composer-setup.php&#39;);&amp;quot; php composer-setup.php --install-dir=/usr/local/bin —filename=composer composer —-version yum install yum-utils yum-config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo yum install docker-ce systemctl start docker systemctl enable docker systemctl status docker docker -v curl -L https://github.com/docker/compose/releases/download/1.25.4/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose chmod +x /usr/local/bin/docker-compose </description>
     </item>
     

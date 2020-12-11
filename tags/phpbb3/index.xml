@@ -13,10 +13,10 @@
     
     <item>
       <title>玩 phpBB3,加裝 packages</title>
-      <link>/posts/phpbb3_addon/</link>
+      <link>/posts/2020/03/%E7%8E%A9-phpbb3%E5%8A%A0%E8%A3%9D-packages/</link>
       <pubDate>Wed, 25 Mar 2020 21:46:33 +0800</pubDate>
       
-      <guid>/posts/phpbb3_addon/</guid>
+      <guid>/posts/2020/03/%E7%8E%A9-phpbb3%E5%8A%A0%E8%A3%9D-packages/</guid>
       <description>phpBB3 採用 compose 管理 packages, 新安裝妥phpBB3後，可先依據 composer.json 以指令 compose install 安裝原始套件的相依 packages，再來加入自動常用的 package ，它會自動載入(autoload)系統中直接可以呼叫使用。
 例如：加入 線上生成 pdf 文件的 tecnickcom/tcpdf 套件
 compose require tecnickcom/tcpdf  此後，在程式中可以直接呼叫
@@ -25,10 +25,10 @@ $pdf = new TCPDF(PDF_PAGE_ORIENTATION, PDF_UNIT, PDF_PAGE_FORMAT, true, &#39;UTF
     
     <item>
       <title>玩 Docker,安裝 phpBB3</title>
-      <link>/posts/docker_phpbb3/</link>
+      <link>/posts/2020/03/%E7%8E%A9-docker%E5%AE%89%E8%A3%9D-phpbb3/</link>
       <pubDate>Wed, 25 Mar 2020 21:33:19 +0800</pubDate>
       
-      <guid>/posts/docker_phpbb3/</guid>
+      <guid>/posts/2020/03/%E7%8E%A9-docker%E5%AE%89%E8%A3%9D-phpbb3/</guid>
       <description>主機：iMac
 新建目錄,其下置入 docker 設定檔案，並將下載的 phpBB-3.3.0 解壓其下成 phpBB3 目錄
   docker-compose.yaml 是主要的設定檔
