@@ -6,11 +6,7 @@
     <description>Recent content in mysqli on wintseng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 25 Mar 2020 21:54:50 +0800</lastBuildDate>
-    
-	<atom:link href="/tags/mysqli/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 25 Mar 2020 21:54:50 +0800</lastBuildDate><atom:link href="/tags/mysqli/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>symfony project 安裝於 sqlite3 改為 mysqli </title>
       <link>/posts/2020/03/symfony-project-%E5%AE%89%E8%A3%9D%E6%96%BC-sqlite3-%E6%94%B9%E7%82%BA-mysqli/</link>

@@ -38,13 +38,14 @@ version: &#39;3&#39; services: db: build: context: ./ dockerfile: Dockerfile-mys
 新建目錄,其下置入 docker 設定檔案，並將下載的 phpBB-3.3.0 解壓其下成 phpBB3 目錄
   docker-compose.yaml 是主要的設定檔
 version: &#39;3&#39; services: db: build: context: ./ dockerfile: Dockerfile-mysql volumes: - db_data:/var/lib/mysql networks: - phpbbsite phpmyadmin: depends_on: - db image: phpmyadmin/phpmyadmin restart: always ports: - &#39;8080:80&#39; environment: PMA_HOST: db MYSQL_ROOT_PASSWORD: password networks: - phpbbsite phpbb: depends_on: - db build: context: ./ dockerfile: Dockerfile-php volumes: [&#39;./phpBB3:/var/www/html&#39;, &#39;./php.ini:/usr/local/etc/php/conf.d/php.ini&#39;] environment: DB_HOST: db MYSQL_ROOT_PASSWORD: password ports: - &#39;8000:80&#39; networks: - phpbbsite networks: phpbbsite: volumes: db_data:    Dockerfile-mysql 是 mysql-5.">
-<meta itemprop="datePublished" content="2020-03-25T21:33:19&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-25T21:33:19&#43;08:00" />
+<meta itemprop="datePublished" content="2020-03-25T21:33:19+08:00" />
+<meta itemprop="dateModified" content="2020-03-25T21:33:19+08:00" />
 <meta itemprop="wordCount" content="136">
 
 
 
-<meta itemprop="keywords" content="phpbb3,mysql,apache,docker,php," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="phpbb3,mysql,apache,docker,php," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="玩 Docker,安裝 phpBB3"/>
 <meta name="twitter:description" content="主機：iMac
 新建目錄,其下置入 docker 設定檔案，並將下載的 phpBB-3.3.0 解壓其下成 phpBB3 目錄

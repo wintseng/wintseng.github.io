@@ -40,13 +40,14 @@
  npm install laravel-mix --save-dev npm install bootstrap font-awesome jquery popper.js axios startbootstrap-sb-admin-2    自 node_modules/laravel-mix/setup/webpack.mix.js 複製到 phpBB3 根目錄, 並編輯之,如下
  let mix = require(&#39;laravel-mix&#39;); mix.js(&#39;src/js/app.js&#39;, &#39;assets/javascript&#39;) .sass(&#39;src/sass/app.scss&#39;, &#39;assets/css&#39;) .sass(&#39;src/sass/landing-page.scss&#39;, &#39;assets/css&#39;) .styles(&#39;src/css/backend.css&#39;, &#39;assets/css/backend.css&#39;) .copy(&#39;node_modules/startbootstrap-landing-page/img&#39;, &#39;./img&#39;) .setPublicPath(&#39;/&#39;);    package.json 需加入
  &quot;scripts&quot;: { &quot;dev&quot;: &quot;npm run development&quot;, &quot;development&quot;: &quot;NODE_ENV=development node_modules/webpack/bin/webpack.">
-<meta itemprop="datePublished" content="2020-03-25T21:48:24&#43;08:00" />
-<meta itemprop="dateModified" content="2020-03-25T21:48:24&#43;08:00" />
+<meta itemprop="datePublished" content="2020-03-25T21:48:24+08:00" />
+<meta itemprop="dateModified" content="2020-03-25T21:48:24+08:00" />
 <meta itemprop="wordCount" content="162">
 
 
 
-<meta itemprop="keywords" content="phpbb,laravel-mix," /><meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="phpbb,laravel-mix," />
+<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="玩phpBB3,自行編繹SASS"/>
 <meta name="twitter:description" content="採用 Laravel-mix 簡易地組合編繹 css 和 javascript 用於自行開發 bootstrap 風格時的作法   先初始化
  npm init    加入需要的套件

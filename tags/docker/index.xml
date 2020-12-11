@@ -6,11 +6,7 @@
     <description>Recent content in docker on wintseng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 25 Mar 2020 21:33:19 +0800</lastBuildDate>
-    
-	<atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 25 Mar 2020 21:33:19 +0800</lastBuildDate><atom:link href="/tags/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>玩 Docker,安裝 phpBB3</title>
       <link>/posts/2020/03/%E7%8E%A9-docker%E5%AE%89%E8%A3%9D-phpbb3/</link>

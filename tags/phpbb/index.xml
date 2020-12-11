@@ -6,11 +6,7 @@
     <description>Recent content in phpbb on wintseng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 25 Mar 2020 21:48:24 +0800</lastBuildDate>
-    
-	<atom:link href="/tags/phpbb/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 25 Mar 2020 21:48:24 +0800</lastBuildDate><atom:link href="/tags/phpbb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>玩phpBB3,自行編繹SASS</title>
       <link>/posts/2020/03/%E7%8E%A9phpbb3%E8%87%AA%E8%A1%8C%E7%B7%A8%E7%B9%B9sass/</link>

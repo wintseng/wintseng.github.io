@@ -6,11 +6,7 @@
     <description>Recent content in centos8 on wintseng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Wed, 25 Mar 2020 21:29:15 +0800</lastBuildDate>
-    
-	<atom:link href="/tags/centos8/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 25 Mar 2020 21:29:15 +0800</lastBuildDate><atom:link href="/tags/centos8/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Centos 8 安裝 Docker 實錄</title>
       <link>/posts/2020/03/centos-8-%E5%AE%89%E8%A3%9D-docker-%E5%AF%A6%E9%8C%84/</link>
