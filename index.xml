@@ -13,7 +13,13 @@
       <pubDate>Fri, 11 Dec 2020 18:22:38 +0800</pubDate>
       
       <guid>/posts/2020/12/%E7%94%B1-wordpress-%E8%BD%89%E7%A7%BB%E5%88%B0-blogger/</guid>
-      <description>重點說明：  Blogger 沒有實體資料夾，所以原來 wordpress 上的 Post 和 Page 所使用到的附夾檔(attachment)和照片都還在原來的主機上。轉移過來的只有 Post 文和 Page 頁面。 （所以原來的主機不能關機，除非再以人工將附檔(或照片)一一下載並在 Blogger 上修改所有相關 PO 文重新插入夾檔(或照片） 往後在 Blogger 上的 PO 文，當然可以直接上傳檔案挿入，但這佔用管理者 Google 帳號的 Google 相簿空間，免費空間似乎只有 15GB（待查證）,對於常需要夾檔的人來說可能有些問題。 由 wordpress 匯出的 xml 無法直接匯入 Blogger, 需經過轉換為 Blogger 格式，所幸網路上就有這樣的服務。這裡就是一個 https://scratchtheweb.com/tools/wordpress-to-blogger-converter/ 匯入 Blogger 的動作看似沒有結果，其實是需要等待幾分鐘至數十分鐘，再回來網站看。  以下是匯入 Blogger 後的範例  https://pe-ymjhs.blogspot.com https://asobikodomo.blogspot.com  所以，步驟就是：  由 Wordpress 後台匯出“全部”（含貼文、頁面和媒體） 轉檔。將 Wordpress 匯出的 xml 檔轉換成 Blogger 匯入格式的 xml 匯入 Blogger 接下來就是在 Blogger 上面的操作了，選擇主題、修改版面配置等等。  後記： 如果是由 wordpress 匯出到另一個 wordpress 就可以更完整的轉移平台了。在匯入新 wordpress 的時候保持原來的舊站在線上，匯入程式會一併將所有附檔與照片（媒體）拉到新平台的相同資料夾。而且，轉移之後可以將舊站關機，所有PO文的附檔與照片都可以正確連結到。</description>
+      <description>重點說明：    Blogger 沒有實體資料夾，所以原來 wordpress 上的 Post 和 Page 所使用到的附夾檔(attachment)和照片都還在原來的主機上。轉移過來的只有 Post 文和 Page 頁面。 （所以原來的主機不能關機，除非再以人工將附檔(或照片)一一下載並在 Blogger 上修改所有相關 PO 文重新插入夾檔(或照片）
+  往後在 Blogger 上的 PO 文，當然可以直接上傳檔案挿入，但這佔用管理者 Google 帳號的 Google 相簿空間，免費空間似乎只有 15GB（待查證）,對於常需要夾檔的人來說可能有些
+  由 wordpress 匯出的 xml 無法直接匯入 Blogger, 需經過轉換為 Blogger 格式，所幸網路上就有這樣的服務。這裡就是一個 https://scratchtheweb.com/tools/wordpress-to-blogger-converter/
+  匯入 Blogger 的動作看似沒有結果，其實是需要等待幾分鐘至數十分鐘，再回來網站看。
+   以下是匯入 Blogger 後的範例    https://pe-ymjhs.blogspot.com
+  https://asobikodomo.blogspot.com
+   所以，步驟就是：    由 Wordpress 後台匯出“全部”（含貼文、頁面和媒體）</description>
     </item>
     
     <item>
