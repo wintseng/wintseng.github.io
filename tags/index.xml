@@ -6,7 +6,25 @@
     <description>Recent content in Tags on wintseng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-tw</language>
-    <lastBuildDate>Fri, 11 Dec 2020 18:22:38 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 30 Jan 2021 22:36:38 +0800</lastBuildDate><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Centos 8</title>
+      <link>/tags/centos-8/</link>
+      <pubDate>Sat, 30 Jan 2021 22:36:38 +0800</pubDate>
+      
+      <guid>/tags/centos-8/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>VirtualBox</title>
+      <link>/tags/virtualbox/</link>
+      <pubDate>Sat, 30 Jan 2021 22:36:38 +0800</pubDate>
+      
+      <guid>/tags/virtualbox/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>wordpress</title>
       <link>/tags/wordpress/</link>

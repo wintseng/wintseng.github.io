@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Centos 8 on wintseng</title>
+    <link>/tags/centos-8/</link>
+    <description>Recent content in Centos 8 on wintseng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-tw</language>
+    <lastBuildDate>Sat, 30 Jan 2021 22:36:38 +0800</lastBuildDate><atom:link href="/tags/centos-8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Virtualbox Centos Network Setup</title>
+      <link>/posts/2021/01/virtualbox-centos-network-setup/</link>
+      <pubDate>Sat, 30 Jan 2021 22:36:38 +0800</pubDate>
+      
+      <guid>/posts/2021/01/virtualbox-centos-network-setup/</guid>
+      <description>背景  iMac MacOS Big Sur VirtuablBox 6.1 Centos 8  重點 是在由 ISO 安裝 Centos 時，除了選取安裝套件與設定 root 密碼外，也要認真地一併設定內外卡的項目，順便認住 IP。 然後才是在 VirtualBox 裡的 Centos8 設定外卡(界面一)需要一起設定 NAT 規則。內卡(界面卡二)則單純選定「僅限主機」即可。  </description>
+    </item>
+    
+  </channel>
+</rss>
